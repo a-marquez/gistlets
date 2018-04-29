@@ -1,0 +1,46 @@
+export default {
+  "data": {
+    "login": "a-marquez",
+    "id": 5215236,
+    "avatar_url": "https://avatars0.githubusercontent.com/u/5215236?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/a-marquez",
+    "html_url": "https://github.com/a-marquez",
+    "followers_url": "https://api.github.com/users/a-marquez/followers",
+    "following_url": "https://api.github.com/users/a-marquez/following{/other_user}",
+    "gists_url": "https://api.github.com/users/a-marquez/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/a-marquez/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/a-marquez/subscriptions",
+    "organizations_url": "https://api.github.com/users/a-marquez/orgs",
+    "repos_url": "https://api.github.com/users/a-marquez/repos",
+    "events_url": "https://api.github.com/users/a-marquez/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/a-marquez/received_events",
+    "type": "User",
+    "site_admin": false,
+    "name": null,
+    "company": null,
+    "blog": "",
+    "location": null,
+    "email": null,
+    "hireable": null,
+    "bio": null,
+    "public_repos": 10,
+    "public_gists": 3,
+    "followers": 1,
+    "following": 2,
+    "created_at": "2013-08-12T16:41:09Z",
+    "updated_at": "2018-04-05T17:56:03Z"
+  },
+  "meta": {
+    "cache-control": "private, max-age=60, s-maxage=60",
+    "content-type": "application/json; charset=utf-8",
+    "etag": "W/\"70ab37a973b921b070c749b49e9e26ca\"",
+    "last-modified": "Thu, 05 Apr 2018 17:56:03 GMT",
+    "x-accepted-oauth-scopes": "",
+    "x-oauth-scopes": "gist",
+    "x-ratelimit-limit": "5000",
+    "x-ratelimit-remaining": "4996",
+    "x-ratelimit-reset": "1525029343"
+  }
+}
+

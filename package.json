@@ -1,0 +1,67 @@
+{
+  "name": "gistlets",
+  "version": "0.0.1",
+  "description": "",
+  "author": "Albert Marquez github.com/a-marquez",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "",
+    "lint": "xo",
+    "lint:fix": "xo --fix",
+    "test": "xo"
+  },
+  "xo": {
+    "parser": "babel-eslint",
+    "extends": "xo-react",
+    "env": "browser",
+    "space": true,
+    "semicolon": false,
+    "ignore": [
+      "**/fixture{s,}/**",
+      "**/fixture{s,}{-*,}.js",
+      "**/experiment{s,}.js",
+      "**/experiment{s,}{-*,}.js"
+    ],
+    "rules": {
+      "jsx-quotes": [
+        "error",
+        "prefer-single"
+      ],
+      "react/prop-types": 0,
+      "capitalized-comments": 0
+    }
+  },
+  "husky": {
+    "hooks": {
+      "post-commit": "npm run lint",
+      "post-push": "npm run lint"
+    }
+  },
+  "dependencies": {
+    "@octokit/rest": "^15.1.3",
+    "cross-fetch": "^2.1.1",
+    "es6-enum": "^1.1.0",
+    "humps": "^2.0.1",
+    "husky": "^0.14.3",
+    "normalizr": "^3.2.4",
+    "ramda": "^0.25.0",
+    "react": "^16.3.2",
+    "react-chrome-redux": "^1.5.1",
+    "react-dom": "^16.3.2",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.2.0",
+    "regenerator-runtime": "^0.11.1",
+    "value-pre": "gist:1e420e5b30911e7758356718fbf91341"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.3",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "eslint-config-xo": "^0.22.0",
+    "eslint-config-xo-react": "^0.16.0",
+    "eslint-plugin-react": "^7.7.0",
+    "parcel-bundler": "^1.7.1",
+    "xo": "^0.20.3"
+  }
+}
