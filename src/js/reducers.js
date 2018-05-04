@@ -2,7 +2,7 @@ import {cond, prop, propEq, T} from 'ramda'
 import {combineReducers} from 'redux'
 
 import {actionTypes} from './actions'
-import {permissionTypes} from './constants'
+import {permissionTypes, views} from './constants'
 
 const gists = (state = {}, action) => {
   switch (action.type) {
@@ -40,3 +40,10 @@ export const entities = combineReducers({gists, users})
 export const permission = (state = permissionTypes.R) => state
 
 export const activeUser = (state = null) => state
+
+export const activeView = (state = views.SAVED, action) => {
+  if (action.type === actionTypes.ACTIVATE_VIEW) {
+    return action.view
+  }
+  return state
+}

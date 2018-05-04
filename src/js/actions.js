@@ -21,6 +21,7 @@ export const actionTypes = new Enum(
   'RETRIEVE_USER_BY_USERNAME',
   // 'RETRIEVE_GISTS_BY_USER',
   // 'RETRIEVE_GISTS_BY_SEARCH',
+  'ACTIVATE_VIEW',
   // 'ACTIVATE_USER'
 )
 
@@ -54,3 +55,8 @@ export const retrieveGistsByUser = user => dispatch => {
       console.error
     )
 }
+
+export const activateView = view => ({
+  type: actionTypes.ACTIVATE_VIEW,
+  view
+})
