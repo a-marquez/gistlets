@@ -3,9 +3,9 @@ import styled from 'styled-components'
 const CenterContainer = styled.div`
   display: grid;
   box-sizing: border-box;
-  height: 100%;
-  width: 100%;
-  padding: 2em 0em;
+  ${props => props.height ? `height: ${props.height};` : ''};
+  ${props => props.width ? `width: ${props.width};` : ''};
+  ${props => props.gridTemplateColumns ? `grid-template-columns: ${props.gridTemplateColumns};` : ''};
 
   & > div {
     align-self: center;

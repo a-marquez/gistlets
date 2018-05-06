@@ -4,7 +4,7 @@ import React from 'react'
 import {Provider} from 'react-redux'
 import {render} from 'react-dom'
 import {combineReducers, createStore, applyMiddleware} from 'redux'
-import logger from 'redux-logger'
+import {createLogger} from 'redux-logger'
 import thunk from 'redux-thunk'
 import ValuePre from 'value-pre'
 
@@ -24,7 +24,7 @@ const store = createStore(
   // initialState,
   applyMiddleware(
     thunk,
-    logger,
+    createLogger({collapsed: true}),
   )
 )
 

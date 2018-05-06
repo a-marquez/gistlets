@@ -7,6 +7,6 @@ const Footer = styled.footer`
 
 export default () => (
   <Footer>
-    <a href='https://github.com/a-marquez/gistlets'>source</a>
+    <a href='https://github.com/a-marquez/gistlets' target='_blank'>source</a>
   </Footer>
 )

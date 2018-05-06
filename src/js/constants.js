@@ -5,8 +5,7 @@ export const permissionTypes = new Enum(
   'RW'
 )
 
-export const views = new Enum(
-  'SAVED',
-  'PERSONAL',
-  'SEARCH'
-)
+export const viewTypes = {
+  SAVED: 'SAVED',
+  PERSONAL: 'PERSONAL'
+}
